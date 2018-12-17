@@ -42,7 +42,7 @@ class ParagraphStyleDemoFragment : Fragment() {
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         tv_tab_stop_standard.text = tabStopSpanStr
 
-        val iconBitmap = BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher)
+        val iconBitmap = BitmapFactory.decodeResource(resources, R.drawable.ic_launcher_drawable)
         val iconMarginSpanStr = SpannableString("Text with icon and padding")
         iconMarginSpanStr.setSpan(IconMarginSpan(iconBitmap, 30), 0, iconMarginSpanStr.length,
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
