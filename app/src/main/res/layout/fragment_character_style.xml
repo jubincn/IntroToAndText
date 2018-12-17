@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="StyleSpan" />
+
+        <TextView
+            android:id="@+id/tv_style_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp"
+            tools:text="Character Style Place Holder Text" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="SuperscriptSpan" />
+
+        <TextView
+            android:id="@+id/tv_superscript_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="SubscriptSpan" />
+
+        <TextView
+            android:id="@+id/tv_subscript_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="RelativeSizeSpan" />
+
+        <TextView
+            android:id="@+id/tv_relative_size_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="AbsoluteSizeSpan" />
+
+        <TextView
+            android:id="@+id/tv_absolute_size_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="ImageSpan" />
+
+        <TextView
+            android:id="@+id/tv_image_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="TextAppearanceSpan" />
+
+        <TextView
+            android:id="@+id/tv_text_appearance_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="ScaleXSpan" />
+
+        <TextView
+            android:id="@+id/tv_scale_x_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="TypefaceSpan" />
+
+        <TextView
+            android:id="@+id/tv_typeface_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="StrikethroughSpan" />
+
+        <TextView
+            android:id="@+id/tv_strike_through_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="UnderlineSpan" />
+
+        <TextView
+            android:id="@+id/tv_underline_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="BackgroundColorSpan" />
+
+        <TextView
+            android:id="@+id/tv_background_color_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="ForegroundColorSpan" />
+
+        <TextView
+            android:id="@+id/tv_foreground_color_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="MuskFilterSpan" />
+
+        <TextView
+            android:id="@+id/tv_musk_filter_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="URLSpan" />
+
+        <TextView
+            android:id="@+id/tv_url_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:textColor="#858C96"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
