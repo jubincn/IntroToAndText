@@ -74,11 +74,6 @@ class ParagraphStyleDemoFragment : Fragment() {
     }
 
     companion object {
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
         @JvmStatic
         fun newInstance(): ParagraphStyleDemoFragment {
             return ParagraphStyleDemoFragment()

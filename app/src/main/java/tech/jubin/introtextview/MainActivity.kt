@@ -14,6 +14,7 @@ import android.view.ViewGroup
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
+import tech.jubin.introtextview.widget.FontMetricsFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,9 +73,12 @@ class MainActivity : AppCompatActivity() {
 
             return when (position) {
                 0 -> {
-                    CharacterStyleDemoFragment.newInstance()
+                    FontMetricsFragment.newInstance()
                 }
                 1 -> {
+                    CharacterStyleDemoFragment.newInstance()
+                }
+                2-> {
                     ParagraphStyleDemoFragment.newInstance()
                 }
                 else -> {
@@ -84,8 +88,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getCount(): Int {
-            // Show 3 total pages.
-            return 3
+            return 4
         }
     }
 
