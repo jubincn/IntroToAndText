@@ -29,31 +29,31 @@
 
 
     <!-- FontMetrics -->
-    <style name="Theme.AppCompat.CheckBoxAscent">
+    <style name="AppTheme.CheckBoxAscent">
         <item name="colorControlActivated">@color/ascent</item>
     </style>
 
-    <style name="Theme.AppCompat.CheckboxTop">
+    <style name="AppTheme.CheckboxTop">
         <item name="colorControlActivated">@color/top</item>
     </style>
 
-    <style name="Theme.AppCompat.CheckboxBaseline">
+    <style name="AppTheme.CheckboxBaseline">
         <item name="colorControlActivated">@color/baseline</item>
     </style>
 
-    <style name="Theme.AppCompat.CheckboxDescent">
+    <style name="AppTheme.CheckboxDescent">
         <item name="colorControlActivated">@color/descent</item>
     </style>
 
-    <style name="Theme.AppCompat.CheckboxBottom">
+    <style name="AppTheme.CheckboxBottom">
         <item name="colorControlActivated">@color/bottom</item>
     </style>
 
-    <style name="Theme.AppCompat.MeasuerdWidth">
+    <style name="AppTheme.MeasuerdWidth">
         <item name="colorControlActivated">@color/measured_width</item>
     </style>
 
-    <style name="Theme.AppCompat.TextBounds">
+    <style name="AppTheme.TextBounds">
         <item name="colorControlActivated">@color/text_bounds</item>
     </style>
 
