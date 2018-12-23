@@ -1,7 +1,7 @@
 package tech.jubin.introtextview.widget
 
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 
-class PrefetchRecyclerViewDemoFragment: Fragment() {
+class PrefetchRecyclerViewDemoFragment: androidx.fragment.app.Fragment() {
 
 }

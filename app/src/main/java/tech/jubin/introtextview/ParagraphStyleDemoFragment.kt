@@ -1,7 +1,7 @@
 package tech.jubin.introtextview
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ import android.text.style.AlignmentSpan
 import android.text.style.QuoteSpan
 import android.graphics.Color
 import android.text.style.BulletSpan
-import android.support.v4.content.res.ResourcesCompat
+import androidx.core.content.res.ResourcesCompat
 import android.text.style.DrawableMarginSpan
 
 
@@ -24,7 +24,7 @@ import android.text.style.DrawableMarginSpan
 
 
 
-class ParagraphStyleDemoFragment : Fragment() {
+class ParagraphStyleDemoFragment : androidx.fragment.app.Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

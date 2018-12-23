@@ -2,7 +2,7 @@ package tech.jubin.introtextview
 
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.text.Spannable
 import android.text.SpannableString
 import android.view.LayoutInflater
@@ -20,11 +20,11 @@ import android.text.style.BackgroundColorSpan
 import android.text.style.ForegroundColorSpan
 import android.text.style.MaskFilterSpan
 import android.graphics.BlurMaskFilter
-import android.support.v4.content.res.ResourcesCompat
+import androidx.core.content.res.ResourcesCompat
 import android.text.style.URLSpan
 
 
-class CharacterStyleDemoFragment : Fragment() {
+class CharacterStyleDemoFragment : androidx.fragment.app.Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,

@@ -3,14 +3,14 @@ package tech.jubin.introtextview
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.text.*
 import android.text.Annotation
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class CustomLayoutDemoFragment : Fragment() {
+class CustomLayoutDemoFragment : androidx.fragment.app.Fragment() {
 
     companion object {
         private const val KEY_BG_ROUNDED = "bgRounded"
