@@ -17,7 +17,6 @@ object TextGenerator {
     private const val PARAGRAPH_MAX_LENGTH = 10
     private val random = Random(SystemClock.uptimeMillis())
 
-
     private fun getWord(): CharSequence {
         val wordLength = random.nextInt(WORD_MIN_LENGTH, WORD_MAX_LENGTH + 1)
         val wordBuilder = StringBuilder()

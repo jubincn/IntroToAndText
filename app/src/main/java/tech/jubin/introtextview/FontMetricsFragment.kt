@@ -1,15 +1,14 @@
-package tech.jubin.introtextview.widget
+package tech.jubin.introtextview
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import kotlinx.android.synthetic.main.fragment_font_metrics.*
-import tech.jubin.introtextview.R
+import tech.jubin.introtextview.widget.FontMetricsView
 
 
 class FontMetricsFragment : androidx.fragment.app.Fragment(), View.OnClickListener {
