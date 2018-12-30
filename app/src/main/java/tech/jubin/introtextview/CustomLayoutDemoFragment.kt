@@ -1,7 +1,10 @@
 package tech.jubin.introtextview
 
+import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
+import android.graphics.drawable.ShapeDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.text.*
@@ -41,7 +44,8 @@ class CustomLayoutDemoFragment : androidx.fragment.app.Fragment() {
             val startCoor = layout.getPrimaryHorizontal(spanStartIndex).toInt()
             val endCoor = layout.getPrimaryHorizontal(spanEndIndex).toInt()
 
-            val drawable = BitmapDrawable()
+            val drawable = ColorDrawable(Color.RED)
+            ShapeDrawable
         }
     }
 }

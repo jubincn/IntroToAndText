@@ -1,4 +1,4 @@
-package tech.jubin.introtextview
+package tech.jubin.introtextview.widget
 
 import android.content.Context
 import android.util.AttributeSet

@@ -9,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.text.PrecomputedTextCompat
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
@@ -70,15 +71,18 @@ class MainActivity : AppCompatActivity() {
 
             return when (position) {
                 0 -> {
-                    PrefetchRecyclerViewDemoFragment.newInstance()
+                    NormalTextRVFragment.newInstance()
                 }
-                3 -> {
+                1-> {
+                    PrecomputedTextRVFragment.newInstance()
+                }
+                2 -> {
                     FontMetricsFragment.newInstance()
                 }
-                1 -> {
+                3 -> {
                     CharacterStyleDemoFragment.newInstance()
                 }
-                2-> {
+                4-> {
                     ParagraphStyleDemoFragment.newInstance()
                 }
                 else -> {
@@ -88,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getCount(): Int {
-            return 4
+            return 5
         }
     }
 
