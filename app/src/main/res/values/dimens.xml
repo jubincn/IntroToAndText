@@ -4,4 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- Rounded Background -->
+    <dimen name="textViewMargin">8dp</dimen>
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="roundedBorderRadius">6dp</dimen>
+    <dimen name="roundedBorderWidth">2dp</dimen>
+
+    <dimen name="roundedTextBorderRadius">4dp</dimen>
+    <dimen name="roundedTextBorderWidth">1dp</dimen>
 </resources>

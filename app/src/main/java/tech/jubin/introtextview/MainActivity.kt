@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
 
         // Set up the ViewPager with the sections adapter.
         container.adapter = mSectionsPagerAdapter
-
     }
 
 
@@ -65,25 +64,28 @@ class MainActivity : AppCompatActivity() {
      * A [FragmentPagerAdapter] that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    inner class SectionsPagerAdapter(fm: androidx.fragment.app.FragmentManager) : androidx.fragment.app.FragmentPagerAdapter(fm) {
+    inner class SectionsPagerAdapter(fm: androidx.fragment.app.FragmentManager) : FragmentPagerAdapter(fm) {
 
         override fun getItem(position: Int): androidx.fragment.app.Fragment {
 
             return when (position) {
+//                0 -> {
+//                    NormalTextRVFragment.newInstance()
+//                }
+//                1-> {
+//                    PrecomputedTextRVFragment.newInstance()
+//                }
+//                2 -> {
+//                    FontMetricsFragment.newInstance()
+//                }
+//                3 -> {
+//                    CharacterStyleDemoFragment.newInstance()
+//                }
+//                4-> {
+//                    ParagraphStyleDemoFragment.newInstance()
+//                }
                 0 -> {
-                    NormalTextRVFragment.newInstance()
-                }
-                1-> {
-                    PrecomputedTextRVFragment.newInstance()
-                }
-                2 -> {
-                    FontMetricsFragment.newInstance()
-                }
-                3 -> {
-                    CharacterStyleDemoFragment.newInstance()
-                }
-                4-> {
-                    ParagraphStyleDemoFragment.newInstance()
+                    RoundedBackgroundDemoFragment.newInstance()
                 }
                 else -> {
                     PlaceholderFragment.newInstance(position + 1)
@@ -92,7 +94,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getCount(): Int {
-            return 5
+            return 1
         }
     }
 
@@ -102,8 +104,8 @@ class MainActivity : AppCompatActivity() {
     class PlaceholderFragment : androidx.fragment.app.Fragment() {
 
         override fun onCreateView(
-                inflater: LayoutInflater, container: ViewGroup?,
-                savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
         ): View? {
             val rootView = inflater.inflate(R.layout.fragment_main, container, false)
             rootView.section_label.text =

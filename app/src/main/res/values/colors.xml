@@ -12,4 +12,11 @@
     <color name="bottom">#78129f</color>
     <color name="measured_width">#bc12ff</color>
     <color name="text_bounds">#b17290</color>
+
+    <!-- Rounded Background -->
+    <color name="roundedTextBg">#554fC3f7</color>
+    <color name="roundedTextBorder">#DD0277BD</color>
+
+    <color name="roundedBg">#FFF176</color>
+    <color name="roundedBorder">#CABF45</color>
 </resources>

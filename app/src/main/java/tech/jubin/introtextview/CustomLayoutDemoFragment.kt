@@ -28,24 +28,5 @@ class CustomLayoutDemoFragment : androidx.fragment.app.Fragment() {
         bgRoundedStr.setSpan(Annotation(KEY_BG_ROUNDED, "red"), 10, 20, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         bgRoundedStr.setSpan(Annotation(KEY_BG_ROUNDED, "green"), 39, bgRoundedStr.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
 
-
-        val spanStartIndex = bgRoundedStr.nextSpanTransition(0, bgRoundedStr.length, Annotation::class.java)
-        val spanEndIndex = bgRoundedStr.nextSpanTransition(spanStartIndex, bgRoundedStr.length, Annotation::class.java)
-
-        val layout: StaticLayout = StaticLayout.Builder.obtain(bgRoundedStr, 0, bgRoundedStr.length, TextPaint(), 540).build()
-
-        // Get line numbers for the start and end of the Annotation
-        val startLine = layout.getLineForOffset(spanStartIndex)
-        val endLine = layout.getLineForOffset(spanEndIndex)
-
-        if (startLine == endLine) {
-            val lineTop = layout.getLineTop(startLine)
-            val lineBottom = layout.getLineBottom(startLine)
-            val startCoor = layout.getPrimaryHorizontal(spanStartIndex).toInt()
-            val endCoor = layout.getPrimaryHorizontal(spanEndIndex).toInt()
-
-            val drawable = ColorDrawable(Color.RED)
-            ShapeDrawable
-        }
     }
 }

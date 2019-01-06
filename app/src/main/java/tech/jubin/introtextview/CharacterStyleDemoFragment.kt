@@ -24,7 +24,7 @@ import androidx.core.content.res.ResourcesCompat
 import android.text.style.URLSpan
 
 
-class CharacterStyleDemoFragment : androidx.fragment.app.Fragment() {
+class CharacterStyleDemoFragment : Fragment() {
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
