@@ -11,7 +11,7 @@ import android.text.style.DynamicDrawableSpan;
 import java.lang.ref.WeakReference;
 
 
-class EmojiconSpan extends DynamicDrawableSpan {
+public class EmojiconSpan extends DynamicDrawableSpan {
 
     private final Context mContext;
 
@@ -81,7 +81,6 @@ class EmojiconSpan extends DynamicDrawableSpan {
 
     @Override
     public void draw(Canvas canvas, CharSequence text, int start, int end, float x, int top, int y, int bottom, Paint paint) {
-        //super.draw(canvas, text, start, end, x, top, y, bottom, paint);
         Drawable b = getCachedDrawable();
         int count = canvas.save();
 

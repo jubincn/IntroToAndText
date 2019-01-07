@@ -211,7 +211,7 @@ class FontMetricsView : View {
 
     fun setTextSizeInPixels(pixels: Int) {
         mTextSize = pixels
-        mTextPaint!!.textSize = mTextSize.toFloat()
+        mTextPaint.textSize = mTextSize.toFloat()
         invalidate()
         requestLayout()
     }

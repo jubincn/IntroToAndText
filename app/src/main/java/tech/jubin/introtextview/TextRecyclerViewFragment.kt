@@ -1,6 +1,7 @@
 package tech.jubin.introtextview
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,6 +17,8 @@ import androidx.work.WorkManager
 import kotlinx.android.synthetic.main.view_rv_item_text.view.*
 import tech.jubin.introtextview.data.DataGenerationWorker
 import tech.jubin.introtextview.data.DataGenerationWorker.Companion.OUTPUT_KEY_TEXTS
+
+private const val TAG = "PrecomputedText"
 
 class NormalTextRVFragment : Fragment() {
 
@@ -111,8 +114,13 @@ class NormalTextRVAdapter : RecyclerView.Adapter<DemoViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: DemoViewHolder, position: Int) {
+        val start = System.currentTimeMillis()
+
         val text = data[position]
         holder.tvContent.text = text
+
+        val duration = System.currentTimeMillis() - start
+        Log.d(TAG, "NormalText onBindViewHolder, position: $position, duration: $duration")
     }
 
     fun updateData(newData: List<String>) {
@@ -135,6 +143,8 @@ class PrecomputedTextRVAdapter : RecyclerView.Adapter<DemoViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: DemoViewHolder, position: Int) {
+        val start = System.currentTimeMillis()
+
         val demoText = data[position]
         val params :PrecomputedTextCompat.Params = TextViewCompat.getTextMetricsParams(holder.tvContent)
         val precomputedText = PrecomputedTextCompat.create(demoText, params)
@@ -145,6 +155,9 @@ class PrecomputedTextRVAdapter : RecyclerView.Adapter<DemoViewHolder>() {
             demoText,
             TextViewCompat.getTextMetricsParams(textView),
             /*optional custom executor*/ null))
+
+        val duration = System.currentTimeMillis() - start
+        Log.d(TAG, "PrecomputedText onBindViewHolder, position: $position, duration: $duration")
     }
 
     fun updateData(newData: List<String>) {

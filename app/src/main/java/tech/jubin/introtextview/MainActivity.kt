@@ -69,24 +69,28 @@ class MainActivity : AppCompatActivity() {
         override fun getItem(position: Int): androidx.fragment.app.Fragment {
 
             return when (position) {
-//                0 -> {
-//                    NormalTextRVFragment.newInstance()
-//                }
-//                1-> {
-//                    PrecomputedTextRVFragment.newInstance()
-//                }
-//                2 -> {
-//                    FontMetricsFragment.newInstance()
-//                }
-//                3 -> {
-//                    CharacterStyleDemoFragment.newInstance()
-//                }
-//                4-> {
-//                    ParagraphStyleDemoFragment.newInstance()
-//                }
                 0 -> {
                     RoundedBackgroundDemoFragment.newInstance()
                 }
+                1 -> {
+                    EmojiIconDemoFragment.newInstance()
+                }
+                2 -> {
+                    NormalTextRVFragment.newInstance()
+                }
+                3 -> {
+                    PrecomputedTextRVFragment.newInstance()
+                }
+                4 -> {
+                    FontMetricsFragment.newInstance()
+                }
+                5 -> {
+                    CharacterStyleDemoFragment.newInstance()
+                }
+                6 -> {
+                    ParagraphStyleDemoFragment.newInstance()
+                }
+
                 else -> {
                     PlaceholderFragment.newInstance(position + 1)
                 }
@@ -94,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getCount(): Int {
-            return 1
+            return 7
         }
     }
 

@@ -4,8 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
-public class EmojiIconTextView extends TextView {
+public class EmojiIconTextView extends AppCompatTextView {
 
     public EmojiIconTextView(Context context) {
         super(context);

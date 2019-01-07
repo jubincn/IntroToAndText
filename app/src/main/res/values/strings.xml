@@ -14,4 +14,6 @@
     <!--<string name="lang2">"អ <annotation key="rounded">៊ីតាលី\nអ៊ីតា</annotation> លី""</string>-->
     <!--<string name="lang3">"नमस्ते <annotation key="rounded">दुनिया\nनमस्ते</annotation> दुनिया"</string>-->
     <!--<string name="lang4">"สวัสดี <annotation key="rounded">ชาวโลก\nสวัสดีชาวโ</annotation> ลก"</string>-->
+
+    <string name="emoji_text">"Hello Emoji World"</string>
 </resources>
